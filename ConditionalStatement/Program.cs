@@ -29,14 +29,15 @@ namespace ConditionalStatement
                 string UserInput = Console.ReadLine();
                 int ExpectedGrade = int.Parse(UserInput);
 
-                if ((ExpectedGrade > 80) && (ExpectedGrade < 90))
+                if ((ExpectedGrade > 79) && (ExpectedGrade < 90))
                     Console.WriteLine("You Will Earn a B");
 
-                else if (ExpectedGrade > 90)
+                else if (ExpectedGrade > 89)
                     Console.WriteLine("You Will Earn an A");
 
-                else if ((ExpectedGrade < 80) && (ExpectedGrade > 70))
+                else if ((ExpectedGrade < 80) && (ExpectedGrade > 69))
                     Console.WriteLine("You Will Earn a C");
+
                 else if (ExpectedGrade < 70)
                     Console.WriteLine("You Will Earn a D");
 
@@ -46,7 +47,7 @@ namespace ConditionalStatement
             catch
             {
                 Console.WriteLine("Please make sure to use a Number Value for your expected grade");
-
+                Console.ReadKey(true);
             }
 
             
